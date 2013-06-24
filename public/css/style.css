@@ -1,0 +1,53 @@
+.sidebar .well {
+  padding: 8px 0;
+  margin-top: 10px;
+}
+.users .user,
+.messages .user,
+.flashes .user,
+.visits .user {
+  margin-bottom: 16px;
+}
+.users .user:nth-child(n+9),
+.messages .user:nth-child(n+9),
+.flashes .user:nth-child(n+9),
+.visits .user:nth-child(n+9) {
+  margin-bottom: 0;
+}
+.users .user .media img,
+.messages .user .media img,
+.flashes .user .media img,
+.visits .user .media img {
+  width: 64px;
+  height: 64px;
+}
+.users .user:nth-child(odd),
+.messages .user:nth-child(odd),
+.flashes .user:nth-child(odd),
+.visits .user:nth-child(odd) {
+  margin-left: 0;
+}
+.users .user h4,
+.messages .user h4,
+.flashes .user h4,
+.visits .user h4 {
+  text-transform: capitalize;
+}
+.users .user .media-body,
+.messages .user .media-body,
+.flashes .user .media-body,
+.visits .user .media-body {
+  color: #333333;
+}
+.users .user img,
+.messages .user img,
+.flashes .user img,
+.visits .user img {
+  border-radius: 2px;
+}
+.users .user a:hover,
+.messages .user a:hover,
+.flashes .user a:hover,
+.visits .user a:hover {
+  text-decoration: none;
+}

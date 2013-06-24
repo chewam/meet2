@@ -1,0 +1,47 @@
+.sidebar {
+
+    .well {
+        padding: 8px 0;
+        margin-top: 10px;
+    }
+}
+
+.users, .messages, .flashes, .visits {
+
+    .user {
+        margin-bottom: 16px;
+
+        &:nth-child(n+9) {
+            margin-bottom: 0;
+        }
+
+        .media {
+
+            img {
+                width: 64px;
+                height: 64px;
+            }
+        }
+
+        &:nth-child(odd) {
+            margin-left: 0;
+        }
+
+        h4 {
+            text-transform: capitalize;
+        }
+
+        .media-body {
+            color: #333333;
+        }
+
+        img {
+            border-radius: 2px;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+    }
+}

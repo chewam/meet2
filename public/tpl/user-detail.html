@@ -1,0 +1,20 @@
+<div class="details">
+    <legend>
+        {{user.name}}
+        <small class="pull-right">33 years</small>
+    </legend>
+
+    <div class="row-fluid">
+        <ul class="thumbnails">
+            <li class="span4" ng:repeat="image in user.images">
+                <a class="thumbnail">
+                    <img ng:src="{{image}}">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <blockquote>
+        <p>{{user.description}}</p>
+        <small>{{user.name}}</small>
+    </blockquote>
+</div>

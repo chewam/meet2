@@ -1,0 +1,28 @@
+form
+    fieldset
+        legend Search
+        .row-fuild
+            .span3
+                .controls
+                    label Type:
+                    select.span12
+                        option --
+                        option Homme
+                        option Femme
+            .span3
+                .controls.controls-row
+                    label.control-label Age:
+                    select.span6
+                        option 25
+                    select.span6
+                        option 35
+            .span3
+                .controls
+                    label Where:
+                    include cities
+            .span3
+                .controls
+                    label &nbsp;
+                    label.checkbox
+                        input(type='checkbox')
+                        | Online only

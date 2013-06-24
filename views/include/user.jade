@@ -1,0 +1,7 @@
+.user.span6(ng:repeat='user in users')
+    a.thumbnail.media(href='#/users/{{user.id}}')
+        img.media-object.pull-left(ng:src='{{user.image}}')
+        .media-body
+            h4.media-heading {{user.name}}
+            div {{user.age}} years
+                div {{user.description}}
