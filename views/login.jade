@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    .container(ng:controller="LoginCtrl")
+        form.form-horizontal(ng:submit="submit(form)")
+            .control-group
+                label.control-label login
+                .controls
+                    input(type="text", ng:model="login")
+            .control-group
+                label.control-label password
+                .controls
+                    input(type="password", ng:model="password")
+            .control-group
+                .controls
+                    button.btn(type="submit") Sign in

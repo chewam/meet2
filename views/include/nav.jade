@@ -1,3 +1,10 @@
+div.thumbnail.media
+     img.media-object.pull-left(src="#{user.image}")
+     .media-body
+          div #{user.name}
+          a.pull-right(href="/logout")
+               small Sign out
+
 .well(ng:controller="NavCtrl")
      ul.nav.nav-list
           li.nav-users

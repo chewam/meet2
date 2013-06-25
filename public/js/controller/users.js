@@ -1,3 +1,22 @@
+function LoginCtrl($scope, $http) {
+
+    $scope.submit = function(form) {
+        console.log('submit', $scope.login, $scope.password);
+        $http.post('/login', {
+            login: $scope.login,
+            password: $scope.password
+        }).
+        success(function(response) {
+            console.log('success', response);
+            if (response.success) {
+                document.location.href = '/';
+            } else {
+                $scope.password = '';
+            }
+        });
+    };
+}
+
 function NavCtrl() {
 
 }

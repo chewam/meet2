@@ -79,3 +79,13 @@ exports.flashes = function(req, res) {
         pageCount: 3
     });
 };
+
+exports.login = function(req, res) {
+    req.session.user = {
+        id: 42,
+        name: 'goldledoigt',
+        image: 'http://placehold.it/32&text=user42'
+    };
+
+    res.json({success: true});
+};
